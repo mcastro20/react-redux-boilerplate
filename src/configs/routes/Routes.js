@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "../../containers/Authenticated/Home/Home";
 import Settings from "../../containers/Authenticated/Settings/Settings";
-import Login from "../../containers/UnAuthenticated/Login/Login";
+import Login from "../../containers/UnAuthenticated/login";
 
 import NotFound from "../../components/NotFound/NotFound";
 
