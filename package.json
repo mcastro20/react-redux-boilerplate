@@ -1,7 +1,9 @@
 {
   "name": "react-redux-boilerplate",
   "version": "0.1.0",
+  "description": "A react redux boilerplate",
   "private": true,
+  "author": "Michael Anthony C. Castro",
   "dependencies": {
     "axios": "^0.19.0",
     "react": "^16.10.2",
