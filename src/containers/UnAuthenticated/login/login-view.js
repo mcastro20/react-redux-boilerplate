@@ -1,12 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 import "./login.css";
 
 const LoginView = props => {
-  return <div>{props.greeting}</div>;
-};
+  const { login, content } = props;
 
-LoginView.propTypes = {};
+  return (
+    <div>
+      <h3>Session Token: {content.sessionToken}</h3>
+      <button onClick={login}>Login</button>
+    </div>
+  );
+};
 
 export default LoginView;

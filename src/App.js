@@ -1,6 +1,9 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import Routes from "./configs/routes/Routes";
+import { Provider } from "react-redux";
+
+import Routes from "./configs/routes/routes";
+import store from "./store";
 
 const App = () => {
   const childProps = {
@@ -8,7 +11,11 @@ const App = () => {
     userHasAuthenticated: false
   };
 
-  return <Routes childProps={childProps} />;
+  return (
+    <Provider store={store}>
+      <Routes childProps={childProps} />
+    </Provider>
+  );
 };
 
 export default withRouter(App);
