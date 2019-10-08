@@ -1,10 +1,6 @@
 import * as types from "./session-types";
 
-const initialState = {
-  sessionToken: null
-};
-
-export default (state = initialState, action) => {
+export default (state = [], action) => {
   switch (action.type) {
     case types.LOGIN:
       return {
