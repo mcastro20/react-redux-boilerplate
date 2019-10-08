@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 // redux component
 import * as actionTypes from "../../../redux/session/session-types";
 // utils
-import { LOGIN_URL } from "../../../configs/constants/api";
+import { LOGIN_URL } from "../../../configs/api/session/session-endpoint";
 
 const LoginContainer = () => {
   const content = useSelector(state => state);
